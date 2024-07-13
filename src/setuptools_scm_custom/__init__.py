@@ -6,13 +6,6 @@ from setuptools_scm._modify_version import _bump_regex
 from setuptools_scm import version
 
 
-def _parse_tag(*args):
-    return "abc"
-
-
-version._parse_tag = _parse_tag
-
-
 def custom(version: ScmVersion) -> str:
     scheme = read_pyproject(tool_name="setuptools_scm_custom").section["version_scheme"]
     return _parse_version_for_scheme(version, scheme)
