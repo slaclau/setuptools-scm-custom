@@ -1,6 +1,6 @@
 [project]
 name = "setuptools-scm-custom"
-dynamic = ["version"]
+dynamic = ["version", "readme"]
 dependencies = ["setuptools>=64", "setuptools_scm>=8"]
 
 [build-system]
@@ -8,3 +8,6 @@ requires = ["setuptools>=64", "setuptools_scm>=8"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools_scm]
+
+[tool.setuptools.dynamic]
+readme = {file = "README.md", content-type = "text/markdown"}
