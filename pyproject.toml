@@ -1,0 +1,4 @@
+[project]
+name = "setuptools-scm-custom"
+dynamic = ["version"]
+dependencies = ["setuptools>=64", "setuptools_scm>=8"]
